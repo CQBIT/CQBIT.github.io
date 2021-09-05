@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "CQBIT"
+title                    : "Home"
 title_separator          : "-"
 name                     : &name "Qi Chen"
-description              : &description "PhD candidate at Beijing Institute of Technology"
-url                      : https://CQBIT.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : &description ""
+url                      : https://cqbit.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "CQBIT.github.io"
+repository               : "cqbit/cqbit.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -85,9 +85,9 @@ author:
   bio              : "PhD candidate at Beijing Institute of Technology, expert in multi-uav cooperation control"
   location         : "Beijing, China"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
+  pubmed           : 
+  googlescholar    : #"http://yourfullgooglescholarurl.com"
+  email            : "qchen.bit@foxmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,20 +96,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "CQBIT"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : #"http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : #"replacethistwitterhandle"
   vine             :
   weibo            :
   xing             :
@@ -175,19 +175,33 @@ kramdown:
 
 # Collections
 collections:
-  teaching:
+  research:
     output: true
     permalink: /:collection/:path/
   publications:
+    output: true
+    permalink: /:collection/:path/  
+  journal:
+    output: true
+    permalink: /:collection/:path/
+  conference:
     output: true
     permalink: /:collection/:path/
   portfolio:
     output: true
     permalink: /:collection/:path/
+  teaching:
+    output: true
+    permalink: /:collection/:path/
   talks:
     output: true
     permalink: /:collection/:path/
-
+  skills:
+    output: true
+    permalink: /:collection/:path/
+  services:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -209,10 +223,10 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
+  # _research
   - scope:
       path: ""
-      type: teaching
+      type: research
     values:
       layout: single
       author_profile: true
@@ -226,7 +240,25 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comments: true
+      comments: true    
+  # _journal
+  - scope:
+      path: ""
+      type: journal
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true   
+  # _conference
+  - scope:
+      path: ""
+      type: conference
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true   
   # _portfolio
   - scope:
       path: ""
@@ -235,7 +267,16 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comment: true
+      comment: true         
+  # _teaching
+  - scope:
+      path: ""
+      type: teaching
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
   # _talks
   - scope:
       path: ""
@@ -243,7 +284,24 @@ defaults:
     values:
       layout: talk
       author_profile: true
+      share: true    
+  # _services
+  - scope:
+      path: ""
+      type: services
+    values:
+      layout: single
+      author_profile: true
+      share: true    
+  # _skills
+  - scope:
+      path: ""
+      type: skills
+    values:
+      layout: single
+      author_profile: true
       share: true
+      comments: true
 
 # Sass/SCSS
 sass:
@@ -255,7 +313,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Shanghai # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
