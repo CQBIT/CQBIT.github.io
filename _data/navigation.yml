@@ -1,6 +1,6 @@
 # main links links
 main:
-  - title: "Research Experience"
+  - title: "Research & Experience"
     url: /research/
 
 #   - title: "Publications"
@@ -12,8 +12,8 @@ main:
   - title: "Education & Awards"
     url: /ea/
 
-  - title: "Talks & Services"
-    url: /ts/
+#   - title: "Talks & Services"
+#     url: /ts/
 
   - title: "Skills & Hobby"
     url: /skill/
@@ -21,8 +21,8 @@ main:
 #   - title: "Portfolio"
 #     url: /portfolio/
         
-#   - title: "Blog Posts"
-#     url: /year-archive/
+  - title: "Blog Posts"
+    url: /year-archive/
 
   - title: "Guide"
     url: /markdown/
