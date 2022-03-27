@@ -16,6 +16,8 @@ Education
 * B.S. in Aerospace Engineering, Beijing Institute of Technology, 2019
 * Ph.D in Aerospace Science and Technology, Beijing Institute of Technology, 2025 (expected)
 
+<hr color="#FFFFFF" />
+
 Awards
 ======
 * Gold medal, in the 6th China International College Students' "Internet+" Innovation and Entrepreneurship Competition, 2020
