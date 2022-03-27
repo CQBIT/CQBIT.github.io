@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+<hr color="#FFFFFF" />
+
 Education
 ======
 * B.S. in Aerospace Engineering, Beijing Institute of Technology, 2019
