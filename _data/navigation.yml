@@ -10,10 +10,10 @@ main:
 #     url: /talks/    
 
   - title: "Education & Awards"
-    url: /cv/
+    url: /ea/
 
   - title: "Talks & Services"
-    url: /teaching/
+    url: /ts/
 
   - title: "Skills & Hobby"
     url: /skill/
